@@ -1,0 +1,70 @@
+# Azure Custom Vision Configuration
+azure:
+  custom_vision:
+    training_key: "your_custom_vision_training_key"
+    prediction_key: "your_custom_vision_prediction_key"
+    endpoint: "https://your-region.cognitiveservices.azure.com/"
+    prediction_resource_id: "/subscriptions/your-subscription/resourceGroups/your-rg/providers/Microsoft.CognitiveServices/accounts/your-prediction-resource"
+
+# Project Configuration
+project:
+  name: "ECO-Tracking-Waste-Classifier"
+  domain_id: "ee85a74c-405e-4adc-bb47-ffa8ca0c9f31"  # General (compact) domain
+  classification_type: "Multiclass"
+
+# Data Configuration
+data:
+  categories:
+    recyclable:
+      - "plastic_bottles"
+      - "glass"
+      - "paper" 
+      - "cans"
+      - "cardboard"
+    organic:
+      - "food_scraps"
+      - "yard_trimmings"
+      - "coffee_tea_bags"
+      - "egg_shells"
+      - "kitchen_waste"
+    hazardous:
+      - "batteries"
+      - "e_waste"
+      - "paints"
+      - "pesticides"
+    non_recyclable:
+      - "ceramic"
+      - "diapers"
+      - "plastic_bags"
+      - "sanitary"
+      - "styrofoam"
+
+# Training Configuration  
+training:
+  batch_size: 64
+  max_images_per_tag: 1000
+  min_images_per_tag: 15
+  test_split: 0.2
+  validation_split: 0.1
+
+# Performance Targets
+performance:
+  min_precision: 0.90
+  min_recall: 0.85
+  min_average_precision: 0.90
+
+# Model Configuration
+model:
+  algorithm: "ONNX12"  # For exportable models
+  export_platforms:
+    - "CoreML"
+    - "TensorFlow" 
+    - "ONNX"
+
+# Evaluation Configuration
+evaluation:
+  confidence_threshold: 0.7
+  test_images_path: "data/test"
+  output_path: "results"
+  generate_confusion_matrix: true
+  generate_classification_report: true
