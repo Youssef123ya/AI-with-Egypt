@@ -351,7 +351,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Beta Testers** for valuable feedback and suggestions
 
 ---
-
-**Built with ♻️ for a more sustainable future 🌍**
-
-*Ready for production deployment and real-world impact!*
