@@ -331,10 +331,6 @@ docker-compose up -d
 - Integration with emerging waste categories
 - Automated contamination detection
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👥 Contributors
 
 - **Full-Stack Development**: Complete application architecture and implementation
