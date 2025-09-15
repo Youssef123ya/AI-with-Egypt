@@ -1,5 +1,22 @@
 # ECO-Tracking: Complete Waste Classification System
-
+Team Name : AI with Egypt
+Team Members: : Youssef Yacoub (lead) , Islam Gamal , Abdulrahman Burham ,Alhassan Ali
+ 
+Community Waste Management & Recycling Tracker
+ 
+ 
+This project encourages community involvement in recycling by providing a platform to track contributions and educate users.
+Core Idea: A mobile-friendly web application where users can log their recycled items (e.g., plastic, paper, glass), view their impact, find nearby recycling centers, and get information on proper recycling.
+Azure Services:
+Azure Custom Vision: To identify recyclable materials from user-uploaded photos (optional, but a cool addition for advanced teams).
+Azure Maps: To display recycling center locations.
+Azure App Service/Static Web Apps: For hosting the web application.
+Azure Functions: For backend APIs (e.g., logging recycling data, fetching recycling center info).
+Azure Cosmos DB/Azure SQL Database: To store user data and recycling records.
+Team Roles:
+Frontend Developer: Builds the user-friendly interface for logging items, viewing statistics, and map integration.
+Backend Developer: Manages data storage, user authentication, and API endpoints.
+AI/Data Specialist: Works on the Custom Vision model (if included) and data analysis for impact tracking.
 A comprehensive, production-ready waste classification and environmental impact tracking system that combines AI-powered image recognition, user engagement features, and environmental impact visualization.
 
 ## 🌍 Project Overview
